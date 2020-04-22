@@ -124,10 +124,11 @@ nav p span{
     text-decoration: none !important;
     color:  #000 !important;
 }
-@media(max-width: 408px){
+@media(max-width: 458px){
     .cv-button {
         max-width : 50%;
         margin-right: 0px;
+        margin-left: 0px;
         text-align: center;
     }
 }
