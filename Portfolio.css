@@ -124,7 +124,7 @@ nav p span{
     text-decoration: none !important;
     color:  #000 !important;
 }
-@media(max-width: 458px){
+@media(max-width: 650px){
     .cv-button {
         max-width : 50%;
         margin-right: 0px;
