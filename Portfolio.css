@@ -3,6 +3,20 @@ nav{
     position: sticky;
     padding: -0.5rem 1rem;
     background-color: #000;
+    z-index : 100;
+}
+:target {
+    position: relative;
+    border-top : 60px solid transparent;
+    margin : -200px 0 0;
+    background-clip: padding-box;
+}
+:target::before{
+    content : "";
+    position : absolute;
+    top : -2px;
+    left : 0;
+    right : 0;
 }
 .navbar .navbar-brand{
     font-size: 200%;
@@ -10,16 +24,20 @@ nav{
     padding-bottom: -0.4rem;
     text-shadow: 2px 2px rgb(126, 122, 122);
 }
+.nav-item{
+    text-align: center;
+}
 .navbar-toggler{
  margin-top: 8px;
- color: #ffce2c;
+ color: #1c967c;
 }
 .navbar-toggler-icon{
     color: #ffce2c;
 }
 .nav-link:hover{
-    color: #ccc;
-    background-color: #fa9a2c;
+    color: #ffce2c !important;
+    font-size: 50px;
+    /* background-color: #1c967c; */
     width: 100%;
 }
 nav p span{
@@ -39,15 +57,9 @@ nav p span{
     height: 150px;
     width: 150px;
     vertical-align: middle;
-    animation: glowing 1.3s infinite;
     background-attachment: fixed;
 }
-/*@keyframes glowing{
-    0%{box-shadow: 0 0 -10px #ff4b2c;}
-    40%{box-shadow: 0 0 20px #ff4b2c;}
-    60%{box-shadow: 0 0 20px #ff4b2c;}
-    100%{box-shadow: 0 0 -10px #ff4b2c;}
-}*/
+
 .intro{
     text-align: center;
     background-attachment: fixed;
@@ -144,22 +156,20 @@ nav p span{
     margin-top: 80px;
 }
 .red-bg{
-    background-color: #fa9a2c;
-    background-image: url(images/.jpg);
+    background-color: #faca2e;
+    /*background-image: url(images/vektor-geometriia.jpg);*/
     color: #fff;
     text-align: right;
     padding-bottom: 50px;
 }
-.gray-bg{
-    background-color: rgb(253, 125, 6);
-    color: #fff;
-    text-align: right;
-    padding-bottom: 50px;
-}
+
 .about-content{
     padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+.heading{
+    border-color: #1c967c;
 }
 .quote{
     color: #000;
@@ -180,6 +190,16 @@ nav p span{
 }
 .progress-bar{
     background-color: rgba(36, 29, 29, 0.774) !important;
+}
+.progress .progress-bar{
+    position: relative;
+    animation: animate-positive 8s infinite;
+}
+@-webkit-keyframes animate-positive{
+    10% {width : 0%;}
+}
+@keyframes animate-positive{
+    10% {width : 0%;}
 }
 .progress-value{
     color: #fff;
@@ -222,7 +242,7 @@ nav p span{
 
 /*-------------Education Section------------*/
 .education-section{
-    margin-top: 100px;
+    margin-top: 40px;
 }
 .institute{
     text-align: left;
@@ -324,6 +344,7 @@ footer{
 .social a{
     margin-left: 20px;
     float: inline-start;
+    text-decoration: none;
 }
 .social a:link, a:hover, a:visited{
     color: rgb(102, 89, 89);
@@ -332,6 +353,9 @@ footer{
 .myimg img{
     height:250px;
     width: 350px;
+}
+.myimg p{
+    color: rgb(80, 79, 79);
 }
 .lastline p span{
     color: #ff4b2c;
