@@ -337,12 +337,12 @@ footer{
     margin-top: 20px;
 }
 .social img{
-    width:30px;
-    height: 30px;
+    width:27px;
+    height: 27px;
     border-radius: 30%;
 }
 .social a{
-    margin-left: 20px;
+    margin-left: 10px;
     float: inline-start;
     text-decoration: none;
 }
