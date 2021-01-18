@@ -2,8 +2,12 @@
 nav{
     position: sticky;
     padding: -0.5rem 1rem;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.021);
     z-index : 100;
+}
+.navbar.scrolled {
+  background-color: #000 !important;
+  transition: background-color 200ms linear;
 }
 :target {
     position: relative;
