@@ -105,15 +105,16 @@ nav p span{
     /*background-color: #000;*/
 }
 .handles a > img{
-    height: 35px;
-    line-height: 35px;
-    width: 35px;
+    height: 50px;
+    line-height: 40px;
+    margin-top: 10px;
+    width: 50px;
     border-radius: 150px;
 }
 @media(max-width: 408px){
     .handles a>img{
-        height: 32px;
-        width: 32px;
+        height: 50px;
+        width: 50px;
     }
 }
 .handles a>img:hover{

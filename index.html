@@ -96,6 +96,11 @@
               </a>
             </li>
             <li>
+              <a src="leetcode.png"href="https://leetcode.com/itzprasuk/" title="LeetCode">
+                <img src="images/leetcode.png">
+              </a>
+            </li>
+            <li>
               <a src="gfg.png" href="https://auth.geeksforgeeks.org/user/itzprasuk/practice/" title="GeeksforGeeks">
                 <img src="images/gfg.png">
               </a>
@@ -370,6 +375,12 @@
   $(document).scroll(function () {
     var $nav = $(".navbar");
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+$(function () {
+  $('.navbar-toggler').click(function () {
+    var $nav = $(".navbar");
+    $nav.addClass('scrolled');
   });
 });
 </script>
