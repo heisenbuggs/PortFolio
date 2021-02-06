@@ -50,7 +50,7 @@ nav p span{
 /*---------Home Page-----------*/
 .front-cover{
     background-image: url(images/bg12.jpg);
-    background-size: cover;
+    background-size: center;
     padding-top: 80px;
     padding-bottom: 40px;
     width: 100%;
