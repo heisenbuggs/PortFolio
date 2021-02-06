@@ -81,6 +81,9 @@ nav p span{
     .mainline{
         font-size: 180%;
     }
+    .front-cover {
+        height: 100vh;
+    }
 }
 .name{
     text-shadow:2px 2px rgb(126, 122, 122);
