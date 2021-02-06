@@ -113,8 +113,8 @@ nav p span{
 }
 @media(max-width: 408px){
     .handles a>img{
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
     }
 }
 .handles a>img:hover{
@@ -147,6 +147,10 @@ nav p span{
         margin-right: 0px;
         margin-left: 0px;
         text-align: center;
+    }
+    .handles a>img{
+        height: 45px;
+        width: 45px;
     }
 }
 .btn{
